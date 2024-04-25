@@ -1,0 +1,8 @@
+class Entry:
+  def __init__(self, priority, process_id):
+    self.priority = priority
+    self.process_id = process_id
+  def __repr__(self):
+    return f"Entry(priority=(self.priority), process_id=(self.process_id)"
+  def __gt__(self, other):
+    return self.priority > other.priority
